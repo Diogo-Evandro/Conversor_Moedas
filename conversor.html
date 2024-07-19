@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversor de Moedas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="others">
+        <h2>Outras Calculadoras:</h2>
+        <button><a href="../calculo_datas/calculo_datas.html">CD</a></button>
+        <button><a href="../calculadora/calculadora.html">CALC</a></button>
+        <button><a href="../IMC/imc.html">IMC</a></button>
+      </div>
+      <div>
+        <h1 class="page-title">Conversor de Moedas</h1>
+        <br />
+        <label for="cotacaoDolar">Cotação do Dólar em relação ao Escudo:</label>
+        <input type="number" id="cotacaoDolar" step="0.01" />
+        <br /><br />
+        <label for="cotacaoEuro">Cotação do Euro em relação ao Escudo:</label>
+        <input type="number" id="cotacaoEuro" step="0.01" />
+        <br /><br />
+        <label for="valor">Valor em moeda escolhida:</label>
+        <input type="number" id="valor" step="0.01" />
+        <br /><br />
+        <button onclick="converter()">Converter</button>
+        <p id="valorConvertido"></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
